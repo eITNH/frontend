@@ -1,0 +1,45 @@
+.SingleDatePicker {
+  width: 100%;
+}
+
+.SingleDatePickerInput {
+  border: none;
+  width: 100%;
+}
+
+.DateInput {
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+  width: 100%;
+  background: none;
+}
+
+.DateInput_input {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-family: 'system';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  color: var(--color_text);
+  background: rgb(243, 244, 245);
+  border: none;
+  border-radius: 5px;
+  outline: 0;
+  transition: all 0.3s ease-in-out;
+  margin-top: 5px;
+}
+
+.SingleDatePicker_picker {
+  z-index: 9999;
+}
+
+.CalendarDay__selected,
+.CalendarDay__selected:active,
+.CalendarDay__selected:hover {
+  background: var(--color_main);
+  color: var(--color_main_contrast);
+  border: 1px solid var(--color_main);
+}

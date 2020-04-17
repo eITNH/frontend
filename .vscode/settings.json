@@ -1,0 +1,74 @@
+{
+  "fastFolderStructure.structures": [
+    {
+      "name": "React Component",
+      "structure": [
+        {
+          "fileName": "<FFSName>.jsx",
+          "template": "JSX"
+        },
+        {
+          "fileName": "index.js",
+          "template": "JS"
+        },
+        {
+          "fileName": "<FFSName>.css",
+          "template": "CSS"
+        }
+      ]
+    },
+    {
+      "name": "React Route",
+      "structure": [
+        {
+          "fileName": "<FFSName>.jsx",
+          "template": "JSX"
+        },
+        {
+          "fileName": "index.js",
+          "template": "JS-Async"
+        },
+        {
+          "fileName": "<FFSName>.css",
+          "template": "CSS"
+        }
+      ]
+    }
+  ],
+  "fastFolderStructure.fileTemplates": {
+    "JSX": [
+      "import React from 'react';",
+      "import PropTypes from 'prop-types';",
+      "",
+      "const <FFSName> = (props) => {",
+      "  return (",
+      "    <div />",
+      "  );",
+      "}",
+      "",
+      "<FFSName>.propTypes = {",
+      "};",
+      "",
+      "<FFSName>.defaultProps = {",
+      "};",
+      "",
+      "export default <FFSName>;"
+    ],
+    "JS": [
+      "import <FFSName> from './<FFSName>.jsx';",
+      "import './<FFSName>.css';",
+      "",
+      "export default <FFSName>;"
+    ],
+    "JS-Async": [
+      "import loadable from '@loadable/component';",
+      "",
+      "import './<FFSName>.css';",
+      "",
+      "export default loadable(() => {",
+      "  return import('./<FFSName>.jsx');",
+      "});"
+    ],
+    "CSS": ["/* ================== <FFSName> ================== */"]
+  }
+}

@@ -1,0 +1,24 @@
+:root {
+  --color_main: #331178;
+  --color_main_contrast: #ffffff;
+  --color_main_text: #e2d9ef;
+
+  --color_online: #1abc9c;
+  --color_offline: #323a45;
+  --color_primary: #331178;
+  --color_secondary: #164366;
+  --color_clickable: #331178;
+
+  --color_info: #0b7fd4;
+  --color_success: #1abc9c;
+  --color_attention: #eb625f;
+  --color_warning: #d8b145;
+
+  --color_favorite: #eb625f;
+
+  --color_body: #f5f7fb;
+  --color_text: #323a45;
+  --color_disabled: #cacaca;
+  --color_muted: rgba(0, 0, 0, 0.35);
+  --color_muted_text: rgba(0, 0, 0, 0.55);
+}

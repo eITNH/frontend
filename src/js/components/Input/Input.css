@@ -1,0 +1,39 @@
+/* ================== INPUTS ================== */
+.Input {
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.Input-field {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-family: 'system';
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color_text);
+  background: rgb(243, 244, 245);
+  border: none;
+  border-radius: 5px;
+  outline: 0;
+  transition: all 0.3s ease-in-out;
+  margin-top: 5px;
+}
+
+.Input-error {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  padding: 5px 15px;
+  font-size: 12px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px;
+  background: var(--color_attention);
+  z-index: 3;
+  color: #fff;
+  transform: translateY(40%);
+}

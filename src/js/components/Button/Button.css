@@ -1,0 +1,65 @@
+/* ==================== BUTTONS ==================== */
+.Button {
+  background: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 0;
+  width: 100%;
+}
+
+.Button--left {
+  width: auto;
+  margin-right: auto;
+}
+
+.Button--right {
+  width: auto;
+  margin-left: auto;
+}
+
+.Button--center {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Button.Button--small {
+  font-size: 12px;
+  padding: 8px 15px;
+}
+
+.Button.Button--default {
+  background: var(--color_primary);
+  color: #ffffff;
+}
+
+.Button.Button--secondary {
+  background: var(--color_secondary);
+  color: #ffffff;
+}
+
+.Button.Button--danger {
+  background: var(--color_attention);
+  color: #ffffff;
+}
+
+.Button.Button--warning {
+  background: var(--color_warning);
+  color: #ffffff;
+}
+
+.Button.Button--opaque {
+  background: none;
+  color: #ffffff;
+}
+
+.Button.Button--disabled {
+  background: var(--color_disabled);
+  color: #ffffff;
+}

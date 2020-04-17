@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  outline: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background: var(--color_body);
+  color: var(--color_text);
+  font-family: 'system';
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--color_clickable);
+  text-decoration: none;
+}
+
+p {
+  margin: 15px 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #eeeeee;
+  margin: 20px 0;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* ======================== HEADINGS ======================= */
+h1 {
+  font-size: 36px;
+  font-weight: 500;
+  color: var(--color_main);
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-weight: 500;
+  color: var(--color_main);
+  margin: 0;
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
