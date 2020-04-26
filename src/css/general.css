@@ -9,12 +9,13 @@
 }
 
 body {
-  background: var(--color_body);
   color: var(--color_text);
+  background-color: var(--color_body);
   font-family: 'system';
   font-size: 14px;
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 a {
@@ -39,6 +40,12 @@ hr {
 button {
   cursor: pointer;
   font-family: inherit;
+}
+
+html,
+#app,
+main {
+  height: 100%;
 }
 
 /* ======================== HEADINGS ======================= */

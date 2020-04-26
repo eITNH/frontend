@@ -1,0 +1,13 @@
+query AdminDashboardQuery {
+  users {
+    id
+    firstname
+    lastname
+    createdAt
+  }
+  courses {
+    id
+    title
+    createdAt
+  }
+}

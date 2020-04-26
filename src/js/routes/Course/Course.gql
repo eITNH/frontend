@@ -1,0 +1,57 @@
+query CourseQuery($id: Int!) {
+  courseById(id: $id) {
+    id
+    title
+    description
+    start
+    end
+  }
+}
+
+# mutation CreateCourse(
+#   $title: String!
+#   $teaser: String
+#   $description: String
+#   $start: DateTime!
+#   $end: DateTime!
+#   $public: Boolean!
+#   $members: [Int!]
+# ) {
+#   createCourse(
+#     data: {
+#       title: $title
+#       teaser: $teaser
+#       description: $description
+#       start: $start
+#       end: $end
+#       public: $public
+#       members: $members
+#     }
+#   ) {
+#     id
+#     title
+#     teaser
+#     description
+#     start
+#     end
+#     public
+#     createdAt
+#     updatedAt
+#   }
+# }
+
+# mutation {
+#   createCourse(
+#     data: {
+#       title: "Test 3"
+#       teaser: "asdasdasd"
+#       description: "Test"
+#       start: "2020-05-30 14:00:00"
+#       end: "2020-05-30 16:00:00"
+#       public: false
+#       members: [2, 4]
+#     }
+#   ) {
+#     id
+#   }
+# }

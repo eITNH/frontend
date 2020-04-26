@@ -22,6 +22,14 @@
   margin-top: 5px;
 }
 
+.Input-description {
+  display: block;
+  color: var(--color_text);
+  opacity: 0.5;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
 .Input-error {
   display: inline-block;
   position: absolute;

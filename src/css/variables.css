@@ -1,13 +1,13 @@
 :root {
-  --color_main: #331178;
+  --color_main: #0d68b3;
   --color_main_contrast: #ffffff;
   --color_main_text: #e2d9ef;
 
   --color_online: #1abc9c;
   --color_offline: #323a45;
-  --color_primary: #331178;
+  --color_primary: #0d68b3;
   --color_secondary: #164366;
-  --color_clickable: #331178;
+  --color_clickable: #0d68b3;
 
   --color_info: #0b7fd4;
   --color_success: #1abc9c;

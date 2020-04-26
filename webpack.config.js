@@ -256,6 +256,11 @@ module.exports = {
         include: [path.join(__dirname, 'src')],
         loader: 'file-loader?name=fonts/[name].[ext]',
       },
+      {
+        test: /\.(graphql|gql)$/,
+        include: [path.join(__dirname, 'src'), path.join(__dirname, 'library')],
+        loader: 'graphql-tag/loader',
+      },
     ],
   },
   node: {

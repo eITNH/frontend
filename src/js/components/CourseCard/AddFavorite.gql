@@ -1,0 +1,6 @@
+mutation AddFavorite($courseId: Int!) {
+  addFavorite(data: { courseId: $courseId }) {
+    id
+    isFavorite
+  }
+}

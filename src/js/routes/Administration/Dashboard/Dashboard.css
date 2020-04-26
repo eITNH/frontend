@@ -1,0 +1,88 @@
+/* ================== Dashboard ================== */
+
+.Dashboard-Content {
+  padding: 50px 40px;
+}
+
+.Infobox {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 3px;
+  color: #ffffff;
+  background: var(--color_main);
+}
+
+.Dashboard-Title {
+  font-size: 19px;
+  margin: 20px 0;
+}
+
+.Management-Block {
+  display: flex;
+  justify-content: space-between;
+  min-width: 400px;
+  max-width: 400px;
+  border-radius: 5px;
+  background: #ffffff;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
+}
+
+.Management-Wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.Management-Block {
+  display: flex;
+  flex-direction: column;
+}
+
+.Management-Block + .Management-Block {
+  margin-left: 20px;
+}
+
+.Management-BlockTitle {
+  padding: 20px 20px 15px 20px;
+  font-size: 19px;
+  font-weight: 500;
+  border-bottom: 2px solid rgb(241, 242, 246);
+}
+
+.Management-BlockStatistic {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid rgb(241, 242, 246);
+}
+
+.Management-BlockStatistic-Title {
+  font-size: 16px;
+}
+
+.Management-BlockList-Title {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 20px 20px 10px 20px;
+}
+
+.Management-BlockStatistic-Value {
+  font-weight: 500;
+}
+
+.Management-BlockList {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.Management-BlockList-LinkWrapper {
+  padding: 5px 20px;
+}
+
+.Management-BlockList-Error {
+  padding: 5px 20px;
+  font-size: 12px;
+  color: var(--color_text);
+  opacity: 0.7;
+}

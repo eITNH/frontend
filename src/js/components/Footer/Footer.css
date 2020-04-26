@@ -1,0 +1,8 @@
+/* ================== Footer ================== */
+
+.Footer {
+  padding: 20px 0;
+  text-align: center;
+  color: var(--color_text);
+  width: 100%;
+}

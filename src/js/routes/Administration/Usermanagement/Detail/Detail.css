@@ -1,0 +1,75 @@
+/* ================== Usermanagement Detail ================== */
+
+.UsermanagementDetail-Content {
+  padding: 50px 40px;
+}
+
+.UsermanagementDetail-TopWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.UsermanagementDetail-MainBox {
+  flex: 3;
+  border-radius: 5px;
+  background: #ffffff;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
+}
+
+.UsermanagementDetail-MainBox-Title {
+  padding: 20px 20px 15px 20px;
+  font-size: 19px;
+  font-weight: 500;
+  border-bottom: 2px solid rgb(241, 242, 246);
+}
+
+.UsermanagementDetail-CourseBox {
+  flex: 1;
+  margin-left: 20px;
+  border-radius: 5px;
+  background: #ffffff;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
+}
+
+.UsermanagementDetail-CourseBox-Title {
+  padding: 20px 20px 15px 20px;
+  font-size: 19px;
+  font-weight: 500;
+  border-bottom: 2px solid rgb(241, 242, 246);
+}
+
+.UsermanagementDetail-CourseBox-ListItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: 10px 0;
+}
+
+.UsermanagementDetail-CourseBox-ListItem-Title {
+  font-weight: bold;
+}
+
+.UsermanagementDetail-MainBox-List {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+
+.UsermanagementDetail-MainBox-List
+  > div:not(.UsermanagementDetail-MainBox-Buttons) {
+  min-width: calc(50% - 20px);
+  max-width: calc(50% - 20px);
+  margin: 10px;
+}
+
+.UsermanagementDetail-MainBox-Buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 10px 20px 20px 20px;
+}

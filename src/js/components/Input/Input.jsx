@@ -54,6 +54,9 @@ const Input = (props) => {
       >
         <label htmlFor={props.name}>
           {props.label}
+          {props.description && (
+            <div className="Input-description">{props.description}</div>
+          )}
           <input
             {...rest}
             className={`
@@ -83,6 +86,9 @@ const Input = (props) => {
       >
         <label htmlFor={props.name}>
           {props.label}
+          {props.description && (
+            <div className="Input-description">{props.description}</div>
+          )}
           <textarea
             {...rest}
             className={`
@@ -110,6 +116,7 @@ Input.propTypes = {
   placeholder: PropTypes.string,
   label: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
+  description: PropTypes.string,
   validator: PropTypes.arrayOf(
     PropTypes.shape({
       required: PropTypes.bool,
@@ -122,6 +129,7 @@ Input.propTypes = {
 Input.defaultProps = {
   type: 'text',
   placeholder: '',
+  description: '',
   value: undefined,
   defaultValue: undefined,
   validator: undefined,

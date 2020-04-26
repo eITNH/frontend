@@ -1,0 +1,6 @@
+mutation RemoveFavorite($courseId: Int!) {
+  removeFavorite(data: { courseId: $courseId }) {
+    id
+    isFavorite
+  }
+}

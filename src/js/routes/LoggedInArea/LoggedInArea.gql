@@ -1,0 +1,5 @@
+#import "../../components/Navigation/Navigation.gql"
+
+query LoggedInAreaQuery {
+  ...NavigationFragment
+}

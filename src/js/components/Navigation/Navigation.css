@@ -1,0 +1,105 @@
+/* ==================== Navigation ==================== */
+
+.Navigation {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* -==========- Top Navigation -==========- */
+
+.Navigation-TopNavigation {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
+}
+
+.Navigation-TopNavigationLogo {
+  margin-left: 40px;
+}
+
+.Navigation-TopNavigationLogo-Name {
+  font-size: 25px;
+  font-weight: 400;
+  color: var(--color_favorite);
+}
+
+.Navigation-TopNavigationLogo-Description {
+  color: #969da3;
+}
+
+.Navigation-TopNavigationUser {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: 16px;
+  margin: 20px 40px;
+  padding: 0;
+  -webkit-appearance: none;
+  border: 0;
+  background: transparent;
+}
+
+.Navigation-TopNavigationUser-Icon {
+  margin-right: 15px;
+  will-change: transform;
+  transition: transform 250ms ease-in-out;
+}
+
+.Navigation-TopNavigationUser-Icon.is-Turned {
+  transform: rotate(180deg);
+}
+
+.Navigation-TopNavigationUser-Name {
+  margin-right: 15px;
+}
+
+.Navigation-TopNavigationUser-Role {
+  color: #969da3;
+  margin-top: 3px;
+  font-size: 12px;
+}
+
+.Navigation-TopNavigationUser-Avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+}
+
+.Navigation-TopNavigationUserMenu {
+  border-radius: 5px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  min-width: 200px;
+  top: 80px;
+  right: 40px;
+  padding: 10px 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
+}
+
+.Navigation-TopNavigationUserMenu-Link {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 20px;
+  font-size: 14px;
+  color: var(--color_text);
+  will-change: color, background-color;
+  transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+}
+
+.Navigation-TopNavigationUserMenu-Link:hover {
+  cursor: pointer;
+  background-color: #e9e9e9;
+  color: var(--color_main);
+}
+
+.Navigation-TopNavigationUserMenu-LinkEmoji {
+  margin-right: 5px;
+}

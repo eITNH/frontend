@@ -1,0 +1,23 @@
+query UsermanagementDetailQuery($id: Int!) {
+  userById(id: $id) {
+    id
+    studentId
+    image
+    username
+    firstname
+    lastname
+    createdAt
+    email
+    type
+    courses {
+      id
+      title
+    }
+    files {
+      id
+      title
+      size
+      type
+    }
+  }
+}

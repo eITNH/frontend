@@ -2,21 +2,22 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Route, Redirect } from 'react-router-dom';
 
+import getTokenData from '../../logic/getTokenData';
+
 const PrivateRoute = (props) => {
-  // TODO: Get Token?
-  const token = 'token';
+  const token = localStorage.getItem('token');
+  const decoded = getTokenData(token);
 
   const { component: Component, ...filteredProps } = props;
   return (
     <Route
       {...filteredProps}
       render={(renderProps) => {
-        // TODO: Login Check / Check if Token is valid :)
-        if (!token) {
-          return <Redirect to="/login" />;
+        if (token && decoded && decoded.exp > Math.floor(Date.now() / 1000)) {
+          return <Component {...renderProps} />;
         }
 
-        return <Component {...renderProps} />;
+        return <Redirect to="/login" />;
       }}
     />
   );

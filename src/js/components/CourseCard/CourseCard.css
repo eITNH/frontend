@@ -1,0 +1,159 @@
+/* ================== CourseCard ================== */
+
+.CourseCard {
+  flex: 1;
+  max-width: calc(20% - 20px);
+  min-width: calc(20% - 20px);
+  background-color: #ffffff;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
+  transition: box-shadow 250ms ease-in-out;
+}
+
+.CourseCard:hover {
+  box-shadow: 0 7px 19px 0 rgba(0, 0, 0, 0.15);
+}
+
+@media only screen and (max-width: 1350px) {
+  .CourseCard {
+    max-width: calc(33% - 20px);
+    min-width: calc(33% - 20px);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .CourseCard {
+    max-width: calc(50% - 20px);
+    min-width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .CourseCard {
+    max-width: calc(100% - 20px);
+    min-width: calc(100% - 20px);
+  }
+}
+
+.CourseCard-Head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px 0 30px;
+  margin-bottom: 10px;
+}
+
+.CourseCard-Title {
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.CourseCard-Favoritebutton {
+  -webkit-appearance: none;
+  border: 0;
+  background-color: transparent;
+  opacity: 0.3;
+  padding: 0;
+  font-size: 13px;
+  transition: opacity 250ms ease-in-out;
+}
+
+.CourseCard-Favoritebutton:hover {
+  opacity: 1;
+}
+
+.CourseCard-Favoritebutton.is-Favorite {
+  color: var(--color_favorite);
+  opacity: 1;
+}
+
+.CourseCard-Description {
+  padding: 0 30px 20px 30px;
+  color: var(--color_text);
+  opacity: 0.5;
+  transition: opacity 250ms ease-in-out;
+}
+
+.CourseCard-Description:hover {
+  opacity: 1;
+}
+
+.CourseCard-Buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.CourseCard-ButtonsButton {
+  -webkit-appearance: none;
+  flex: 1;
+  background-color: transparent;
+  border: 0;
+  text-align: center;
+  color: var(--color_disabled);
+  border-top: 2px solid rgb(241, 242, 246);
+  border-right: 1px solid rgb(241, 242, 246);
+  padding: 20px 0;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: color 250ms ease-in-out;
+}
+
+.CourseCard-ButtonsButton:hover {
+  color: var(--color_clickable);
+}
+
+.CourseCard-ButtonsButton + .CourseCard-ButtonsButton {
+  border-left: 1px solid rgb(241, 242, 246);
+}
+
+.CourseCard-Infos {
+  border-top: 2px solid rgb(241, 242, 246);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.CourseCard-InfosInfo {
+  flex: 1;
+  min-width: 50%;
+  max-width: 50%;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.CourseCard-InfosInfo--big {
+  margin-top: 15px;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.CourseCard-InfosInfo-Label {
+  color: var(--color_text);
+  opacity: 0.5;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.CourseCard-InfosInfo-Value {
+  margin: 0;
+  hyphens: auto;
+}
+
+.CourseCard-InfosInfo-Value-Category {
+  display: inline-flex;
+  align-items: center;
+}
+
+.CourseCard-InfosInfo-Value-CategoryDot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-right: 3px;
+}

@@ -1,0 +1,8 @@
+fragment NavigationFragment on Query {
+  me {
+    id
+    firstname
+    lastname
+    image
+  }
+}

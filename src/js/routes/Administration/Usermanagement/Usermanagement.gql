@@ -1,0 +1,12 @@
+query UsermanagementQuery {
+  users {
+    id
+    studentId
+    username
+    firstname
+    lastname
+    createdAt
+    email
+    type
+  }
+}

@@ -1,0 +1,33 @@
+/* ================== DashboardCategory ================== */
+
+.DashboardCategory-Header {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.DashboardCategory-HeaderTitle {
+  font-size: 23px;
+}
+
+.DashboardCategory-HeaderTitle-Emoji {
+  margin-right: 7px;
+}
+
+.DashboardCategory-HeaderButton {
+  -webkit-appearance: none;
+  border: 0;
+  color: var(--color_main);
+  background-color: transparent;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.DashboardCategory--Content {
+  margin: -10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

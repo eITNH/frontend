@@ -1,0 +1,19 @@
+fragment CourseCardFragment on Course {
+  id
+  title
+  teaser
+  start
+  end
+  isFavorite
+  professors {
+    id
+    firstname
+    lastname
+  }
+  categories {
+    id
+    title
+    color
+  }
+  createdAt
+}

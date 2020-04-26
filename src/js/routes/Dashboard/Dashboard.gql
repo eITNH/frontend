@@ -1,0 +1,8 @@
+#import "../../components/CourseCard/CourseCardFragment.gql"
+
+query DashboardQuery {
+  courses {
+    id
+    ...CourseCardFragment
+  }
+}
