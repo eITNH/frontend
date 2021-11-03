@@ -60,7 +60,7 @@
     "sha512": "^0",
     "sweetalert": "^2.1.2",
     "uuid": "^3.3.3",
-    "validator": "^12"
+    "validator": "^13"
   },
   "devDependencies": {
     "@types/react": "^16.0.0",
